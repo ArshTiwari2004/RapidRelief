@@ -13,7 +13,7 @@ const Page = () => {
   const router = useRouter();
 
   const handleGetOTP = () => {
-    router.replace("/login/otp/")
+    router.push("/login/otp/")
   };
   const handleToggleTerms = () => {
     setAgreeTerms(!agreeTerms);
