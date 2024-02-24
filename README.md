@@ -6,6 +6,7 @@ RapidRelief🆘
 RapidRelief is a community-driven platform aimed at providing assistance during emergencies and calamities. 🚨
 
 Features:
+
 🤝 Volunteer Registration and Verification: Join our network of volunteers to offer your help during emergencies. Registration includes a verification process to ensure reliability.
 
 🏆 Ranking System for Volunteers: Volunteers are ranked based on the number of successful requests completed, promoting accountability and recognition.
