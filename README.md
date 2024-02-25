@@ -1,5 +1,9 @@
 # RapidRelief 🆘
+<<<<<<< HEAD
 RapidRelief is a community-driven platform aimed at providing FREE assistance during emergencies and calamities. Users can opt to become volunteers. Whenever someone's in an emergency or in need of help, they can open the app and call for immediate help. One of our volunteers will arrive as fast as possible, with important equipment provided by us like a proper first aid kit, tools and other aids as per the requirement. The volunteer *will* want to do it as fast as possible to get the maximum points. Volunteers can later redeem their points earned by helping others in exchange for currency! This keeps them motivated to help others while also helping improve the society.
+=======
+RapidRelief is a community-driven platform aimed at providing FREE assistance during emergencies and calamities. Users can opt to become volunteers. Whenever someone's in an emergency or in need of help, they can open the app and call for immediate help. One of our volunteers will arrive as fast as possible, with important equipment provided by us like a proper first aid kit, tools and other aids as per the requirement. The volunteer will want to do it as fast as possible to get the maximum points. Volunteers can later redeem their points earned by helping others in exchange for currency! This keeps them motivated to help others while also helping improve the society.
+>>>>>>> refs/remotes/origin/main
 
 ### TL;DR
 1. You have two options:  
@@ -34,7 +38,7 @@ This is an Android and iOS application built using the following technologies:
 🤝 Volunteer Registration and Verification: Join our network of volunteers to offer your help during emergencies. Registration includes a verification process to ensure reliability.  
 🏆 Ranking System for Volunteers: Volunteers are ranked based on the number of successful requests completed, promoting accountability and recognition.  
 🔄 Feedback Loop: Gather feedback from both the person requesting help and the volunteer to continually improve the service and rank volunteers effectively.  
-🗺️ Location Tracking: Utilize Google Maps integration to track the location of both volunteers and those in need of assistance, ensuring timely help.  
+🗺 Location Tracking: Utilize Google Maps integration to track the location of both volunteers and those in need of assistance, ensuring timely help.  
 📞 Communication Channel: Facilitate communication between volunteers and those seeking help, enabling efficient coordination and support.  
 📣 Awareness Campaigns: Run campaigns to raise awareness and encourage more individuals to volunteer and support others in times of need.  
 🔄 Continuous Improvement: Regularly update and enhance the platform based on user feedback and emerging needs in the community.  
@@ -63,7 +67,7 @@ npx expo install
 5. Run Expo Server
 ```bash
 npx expo start
-```
+
 4. Download the ExpoGo app From the [Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) or the [App Store](https://apps.apple.com/in/app/expo-go/id982107779)
 5. Scan the QR code displayed in your terminal after doing step 3 from the Expo App.
 6. Now you can test the app.
