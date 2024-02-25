@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492282259174",
+    "project_id": "hackfrosh-app",
+    "storage_bucket": "hackfrosh-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492282259174:android:28f830dfbf003a4c047d27",
+        "android_client_info": {
+          "package_name": "com.hackfrosh.rapidrelief"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClzMis0wkvIEKOjFQSxfl9g9ubs-s_jG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

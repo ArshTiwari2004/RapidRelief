@@ -4,17 +4,22 @@ import { useRouter, useFocusEffect } from "expo-router";
 import Spinner from "../components/loading/Spinner";
 
 export default Page = () => {
-  const { isLoggedIn, isVolunteer } = useFirebaseContext();
+  const { currentUser } = useFirebaseContext();
   const router = useRouter();
 
   useFocusEffect(() => {
-    if (isLoggedIn && isVolunteer) {
-      // navigate to volunteer dashboard
-    } else if (isLoggedIn) {
-      // navigate to user dashboard
+    if (currentUser && !currentUser.completedRegistration) {
+      router.replace("/intro");
+    } else if (currentUser && currentUser.completedRegistration) {
+      // check if user is a volunteer or a user
+      if (currentUser?.isVolunteer) {
+        router.replace("/dashboard/volunteer");
+      } else {
+        router.replace("/dashboard/user");
+      }
     } else {
       // navigate to login
-      router.replace("/login/user/");
+      router.replace("/login/phoneNumber/");
     }
   });
 

@@ -1,8 +1,9 @@
-import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import Button from "../../components/Button";
+import {useRouter} from "expo-router";
 
 const Page = () => {
+  const router = useRouter();
   return (
     <View className="bg-background w-full h-full">
       {/*  for photo */}
@@ -21,7 +22,9 @@ const Page = () => {
           <Text className="font-bold text-3xl text-foreground mb-6">
             Sign Up as a User
           </Text>
-          <Button bold colour="primary">Register as a User</Button>
+          <Button onPress={()=>{
+            router.push("/login/details/user");
+          }} bold colour="primary">Register as a User</Button>
         </View>
 
         <View>
@@ -31,7 +34,9 @@ const Page = () => {
           <Text className="font-bold text-3xl text-foreground mb-6">
             Sign Up as a Volunteer
           </Text>
-          <Button bold colour="primary">Register as a Volunteer</Button>
+          <Button onPress={()=>{
+            router.push("/login/details/volunteer");
+          }} bold colour="primary">Register as a Volunteer</Button>
         </View>
       </View>
     </View>

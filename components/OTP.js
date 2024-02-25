@@ -1,22 +1,28 @@
-import { useState, useRef, createRef } from "react";
+import { useState, useRef, createRef, useLayoutEffect} from "react";
 import { View, TextInput} from "react-native";
 
-const OTP = () => {
-  const [otp, setOtp] = useState([]);
-  const refs = useRef([createRef(), createRef(), createRef(), createRef()]);
+const OTP = ({setParentOTP}) => {
+  const [otpArr, setOtpArr] = useState([]);
+  const refs = useRef([createRef(), createRef(), createRef(), createRef(), createRef(), createRef()]);
+
+  useLayoutEffect(()=>{
+    setParentOTP(otpArr.join(''));
+  }, [otpArr, setParentOTP])
 
   return (
     <View className="flex-row gap-2 mb-8">
     {
-        Array.from({length: 4}).map((_, index) => (
+        Array.from({length: 6}).map((_, index) => (
             <TextInput
                 className="text-foreground p-2 text-lg border-b-2 border-foreground text-center"
+                inputMode="numeric"
                 key={index}
                 ref={refs.current[index]}
-                value={otp[index]}
+                value={otpArr[index]}
                 onChangeText={(text) => {
-                    if (isNaN(text)) return;
-                    setOtp([...otp.map((d, i) => (i === index ? text : d))]);
+                    setOtpArr(prev => {
+                        return [...prev.slice(0, index), text, ...prev.slice(index + 1)];
+                    });
                     if (text) {
                         refs.current[index + 1]?.current?.focus();
                     } else {
