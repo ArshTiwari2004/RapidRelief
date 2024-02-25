@@ -1,9 +1,5 @@
 # RapidRelief 🆘
-<<<<<<< HEAD
-RapidRelief is a community-driven platform aimed at providing FREE assistance during emergencies and calamities. Users can opt to become volunteers. Whenever someone's in an emergency or in need of help, they can open the app and call for immediate help. One of our volunteers will arrive as fast as possible, with important equipment provided by us like a proper first aid kit, tools and other aids as per the requirement. The volunteer *will* want to do it as fast as possible to get the maximum points. Volunteers can later redeem their points earned by helping others in exchange for currency! This keeps them motivated to help others while also helping improve the society.
-=======
 RapidRelief is a community-driven platform aimed at providing FREE assistance during emergencies and calamities. Users can opt to become volunteers. Whenever someone's in an emergency or in need of help, they can open the app and call for immediate help. One of our volunteers will arrive as fast as possible, with important equipment provided by us like a proper first aid kit, tools and other aids as per the requirement. The volunteer will want to do it as fast as possible to get the maximum points. Volunteers can later redeem their points earned by helping others in exchange for currency! This keeps them motivated to help others while also helping improve the society.
->>>>>>> refs/remotes/origin/main
 
 ### TL;DR
 1. You have two options:  
@@ -47,7 +43,7 @@ Installation:
 
 ## Testing Instructions
 ### Download The APK File
-
+<a href="https://github.com/ArshTiwari2004/hackfrosh/releases/download/v0.0.1/rapid-relief.apk" style="padding: 8px 16px; background: #8bc34a; color: black; font-size: 18px;">Download APK for Android</a>
 
 ### Development
 1. Install [Node.js](https://nodejs.org/en)
